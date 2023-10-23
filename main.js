@@ -1,0 +1,24 @@
+function logout() {
+  localStorage.removeItem("Name");
+  localStorage.removeItem("DateOfBirth");
+  localStorage.removeItem("Email");
+  localStorage.removeItem("MobileNo");
+  localStorage.removeItem("Gender");
+  localStorage.removeItem("Occupation");
+  localStorage.removeItem("IDNumber");
+  localStorage.removeItem("IssueDate");
+  localStorage.removeItem("ExpiryDate");
+  localStorage.removeItem("AccNo");
+  localStorage.removeItem("AccType");
+  localStorage.removeItem("PinNo");
+  localStorage.removeItem("Address");
+  localStorage.removeItem("CityName");
+  localStorage.removeItem("StateName");
+  localStorage.removeItem("DistrictName");
+  localStorage.removeItem("BlockNo");
+  localStorage.removeItem("WardNo");
+  localStorage.removeItem("Username");
+  localStorage.removeItem("PassWord");
+  localStorage.removeItem("RePassWord");
+  localStorage.removeItem("dAmt");
+}

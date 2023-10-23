@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSS Online Banking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="display()">
+    <div class="sidebar">
+      <div class="logo"></div>
+      <ul class="menu">
+        <li class="active">
+          <a href="#">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="Profile.html">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <span>My Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="Deposit.html">
+            <ion-icon name="cash-outline"></ion-icon>
+            <span>Deposit</span>
+          </a>
+        </li>
+        <li>
+          <a href="Withdraw.html">
+            <ion-icon name="wallet-outline"></ion-icon>
+            <span>Withdraw</span>
+          </a>
+        </li>
+        <li>
+          <a href="CheckBalance.html">
+            <ion-icon name="bag-check-outline"></ion-icon>
+            <span>Check Balance</span>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="Bank-to-Bank.html">
+            <ion-icon name="bag-check-outline"></ion-icon>
+            <span>Bank to bank Transfer</span>
+          </a>
+        </li> -->
+        <li>
+          <a href="#">
+            <ion-icon name="bar-chart-outline"></ion-icon>
+            <span>Statistics</span>
+          </a>
+        </li>
+        <li class="logout">
+          <a href="Login.html" onclick="logout()">
+            <ion-icon name="log-out-outline"></ion-icon>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="header-wrapper">
+        <div class="header-title">
+          <span>Primary</span>
+          <h2>Dashboard</h2>
+        </div>
+        <div class="user-info">
+          <div class="search-box">
+            <ion-icon name="search-circle-outline"></ion-icon>
+            <input type="text" placeholder="Search" />
+          </div>
+          <img src="user.png" />
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-wrapper"></div>
+      </div>
+    </div>
+
+    <div class="main-cards">
+      <a href="Profile.html">
+        <div class="card" style="background-color: lightblue">
+          <div class="cars-inner">
+            <p class="text-primary">My Profile</p>
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </div>
+          <span id="Name"></span>
+          <span class="text-primary font-weight-bold">Click Here</span>
+        </div>
+      </a>
+
+      <a href="Deposit.html">
+        <div class="card" style="background-color: lightgray">
+          <div class="cars-inner">
+            <p class="text-primary">Deposit</p>
+            <ion-icon name="cash-outline"></ion-icon>
+          </div>
+          <span id="Deposit"></span>
+          <span class="text-primary font-weight-bold">Click Here</span>
+        </div>
+      </a>
+
+      <a href="Withdraw.html">
+        <div class="card" style="background-color: cadetblue">
+          <div class="cars-inner">
+            <p class="text-primary">Withdraw</p>
+            <ion-icon name="wallet-outline"></ion-icon>
+          </div>
+          <span id="Withdraw"></span>
+          <span class="text-primary font-weight-bold">Click Here</span>
+        </div>
+      </a>
+
+      <a href="CheckBalance.html">
+        <div class="card" style="background-color: lightyellow">
+          <div class="cars-inner">
+            <p class="text-primary">Check Balance</p>
+            <ion-icon name="bag-check-outline"></ion-icon>
+          </div>
+          <span id="CheckBal"></span>
+          <span class="text-primary font-weight-bold">Click Here</span>
+        </div>
+      </a>
+    </div>
+    <!-- import icons from google👇 -->
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

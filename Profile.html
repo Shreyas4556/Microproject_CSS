@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>2
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="Profile.css" />
+  </head>
+  <body onload="display()">
+    <div class="container">
+      <header>Your Profile </header>
+      <form class="myProfile">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <label for="Fname">Full Name :</label>
+                <input type="text" id="Fname" disabled />
+              </div>
+
+              <div class="input-field">
+                <label for="DOB">Date Of Birth :</label>
+                <input type="text" id="DOB" disabled />
+              </div>
+
+              <div class="input-field">
+                <label for="Email">Email :</label>
+                <input type="text" id="Email" disabled />
+              </div>
+
+              <div class="input-field">
+                <label for="Mobile">Mobile Number :</label>
+                <input type="text" id="Mobile" disabled />
+              </div>
+
+              <div class="input-field">
+                <label for="gender">Gender :</label>
+                <input type="text" name="Gender" id="gender" disabled />
+              </div>
+
+              <div class="input-field">
+                <label for="occupation">Occupation :</label>
+                <input type="text" name="Occupation" id="occupation" disabled />
+              </div>
+            </div>
+          </div>
+
+          <div class="details ID">
+            <span class="title">Identity Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <label for="IDNum">ID Number :</label>
+                <input type="text" id="IDNum" disabled />
+              </div>
+
+              <div class="input-field">
+                <label for="issdate">Issued date :</label>
+                <input type="text" id="issdate" disabled />
+              </div>
+
+              <div class="input-field">
+                <label for="expire">Expiry Date :</label>
+                <input type="text" id="expire" disabled />
+              </div>
+            </div>
+
+            <div class="details account">
+              <span class="title">Account Details</span>
+              <div class="fields">
+                <div class="input-field">
+                  <label for="Accno">Account Number :</label>
+                  <input type="text" id="Accno" disabled />
+                </div>
+
+                <div class="input-field">
+                  <label for="Acc_Type">Account Type :</label>
+                  <input type="text" id="Acc_Type" disabled />
+                </div>
+                <div class="input-field">
+                  <label for="pinNo">PIN Number :</label>
+                  <input type="text" id="pinNo" disabled />
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <input type="button" class="nextBtn"  value="Next" onclick="gotonext()">
+                <input
+                  type="button"
+                  class="nextBtn"
+                  value="Dashboard"
+                  onclick="gotoDash()"
+                />
+            </div>
+          </div>
+        </div>
+    <script src="Profile.js"></script>
+  </body>
+</html>

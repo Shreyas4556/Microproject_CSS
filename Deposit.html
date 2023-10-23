@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="DepositWithdraw.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Wel-Come to iBanking</h1>
+      <div class="container">
+        <h2>Deposit Your Amount</h2><br>
+        <hr>
+        <form>
+          <div class="form first">
+            <div class="details personal">
+              <div class="fields">
+                <div class="input-field">
+                  <label for="depositAmt">Enter Deposit Amount :</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Deposit Amount"
+                    id="depositAmt"
+                    required
+                  />
+                  <span id="AmtError"></span>
+                </div>
+                
+              <input type="button" class="depositBtn" value="Deposit" onclick="validate()"/>
+              <input type="button" class="backBtn" value="Back" onclick="gotoDash()">
+            </div>
+          </div>
+        </form>
+      </div>
+    </center>
+    <script src="DepositWithdraw.js"></script>
+  </body>
+</html>

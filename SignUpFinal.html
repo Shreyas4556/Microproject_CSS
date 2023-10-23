@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="SignUpFinal.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>Application Form</header>
+      <form>
+        <div class="form first">
+          <div class="details personal">
+            <!-- Personal Details -->
+            <span class="title">Personal Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <!-- Full Name -->
+                <label for="Fname">Full Name :</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="Fname"
+                  required
+                />
+                <span id="FullNameError"></span>
+              </div>
+
+              <!-- Date of birth -->
+              <div class="input-field">
+                <label for="DOB">Date Of Birth :</label>
+                <input
+                  type="date"
+                  placeholder="Enter birth date"
+                  id="DOB"
+                  required
+                />
+                <span id="DobError"></span>
+              </div>
+
+              <!-- Email input -->
+              <div class="input-field">
+                <label for="Email">Email :</label>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  id="Email"
+                  required
+                />
+                <span id="emailError"></span>
+              </div>
+
+              <!-- Mobile number input -->
+              <div class="input-field">
+                <label for="Mobile">Mobile Number :</label>
+                <input
+                  type="number"
+                  placeholder="Enter Mobile Number"
+                  id="Mobile"
+                  required
+                />
+                <span id="MobNoError"></span>
+              </div>
+
+              <!-- Gender select box -->
+              <div class="input-field">
+                <label for="gender">Gender :</label>
+                <select name="Gender" id="gender">
+                  <option value="null" hidden>Select here</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Others">Others</option>
+                </select>
+                <span id="genderError"></span>
+              </div>
+
+              <!-- Occupation select box -->
+              <div class="input-field">
+                <label for="occupation">Occupation :</label>
+                <select name="Occupation" id="occupation">
+                  <option value="null" hidden>Select here</option>
+                  <option value="Non-Graduate">Self-Employed</option>
+                  <option value="Graduate">Salaried</option>
+                  <option value="Student">Student</option>
+                  <option value="Retired">Retired</option>
+                </select>
+                <span id="occpationError"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="details ID">
+            <span class="title">Identity Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <label for="IDNum">ID Number :</label>
+                <input
+                  type="number"
+                  placeholder="Enter ID Number"
+                  id="IDNum"
+                  required
+                />
+                <span id="IdnoError"></span>
+              </div>
+
+              <div class="input-field">
+                <label for="issdate">Issued date :</label>
+                <input
+                  type="date"
+                  placeholder="Enter issued date"
+                  id="issdate"
+                  required
+                />
+                <span id="dateIssueError"></span>
+              </div>
+
+              <div class="input-field">
+                <label for="expire">Expiry Date :</label>
+                <input
+                  type="date"
+                  placeholder="Enter Expiry Date"
+                  id="expire"
+                  required
+                />
+                <span id="dateExpiryError"></span>
+              </div>
+            </div>
+
+            <div class="details account">
+              <span class="title">Account Details</span>
+              <div class="fields">
+                <div class="input-field">
+                  <label for="Accno">Account Number :</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Account Number"
+                    id="Accno"
+                    required
+                  />
+                  <span id="AccnoError"></span>
+                </div>
+
+                <div class="input-field">
+                  <label for="Acc_Type">Account Type :</label>
+                  <select name="Account_Type" id="Acc_Type">
+                    <option value="null" hidden>Select here</option>
+                    <option value="Saving Account">Saving Account</option>
+                    <option value="Current Account">Current Account</option>
+                    <option value="Fixed Deposit Account">
+                      Fixed Deposit Account
+                    </option>
+                    <option value="Recurring Deposit Account">
+                      Recurring Deposit Account
+                    </option>
+                  </select>
+                  <span id="AccTypeError"></span>
+                </div>
+
+                <div class="input-field">
+                  <label for="pinNo">PIN Number :</label>
+                  <input
+                    type="number"
+                    placeholder="Enter PIN Number"
+                    id="pinNo"
+                    required
+                  />
+                  <span id="pinnoError"></span>
+                </div>
+              </div>
+            </div>
+            <button class="nextBtn" onclick="validation()">Next</button>
+          </div>
+        </div>
+
+        <div class="form second">
+          <div class="details address">
+            <span class="title">Address Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <label for="Address">Address :</label>
+                <input
+                  type="text"
+                  placeholder="Enter address type"
+                  id="Address"
+                  required
+                />
+                <span id="addTypeError"></span>
+              </div>
+
+              <div class="input-field">
+                <label for="city">City Name :</label>
+                <input
+                  type="text"
+                  placeholder="Enter city name"
+                  id="city"
+                  required
+                />
+                <span id="cityError"></span>
+              </div>
+
+              <div class="input-field">
+                <label for="state">State :</label>
+                <input
+                  type="text"
+                  placeholder="Enter your state"
+                  id="state"
+                  required
+                />
+                <span id="stateError"></span>
+              </div>
+
+              <div class="input-field">
+                <label for="district">District :</label>
+                <input
+                  type="text"
+                  placeholder="Enter your district"
+                  id="district"
+                  required
+                />
+                <span id="districtError"></span>
+              </div>
+
+              <div class="input-field">
+                <label for="blockNo">Block Number :</label>
+                <input
+                  type="number"
+                  placeholder="Enter block number"
+                  id="blockNo"
+                  required
+                />
+                <span id="blockNoError"></span>
+              </div>
+
+              <div class="input-field">
+                <label for="wardNo">Ward Number :</label>
+                <input
+                  type="number"
+                  placeholder="Enter ward number"
+                  id="wardNo"
+                  required
+                />
+                <span id="wardError"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="details family">
+            <span class="title">Family Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label for="fatherNm">Father's Name :</label>
+                <input
+                  type="text"
+                  placeholder="Enter father's name"
+                  id="fatherNm"
+                  required
+                />
+                <!-- <span id="FnmError"></span> -->
+              </div>
+
+              <div class="input-field">
+                <label for="motherNm">Mother's name :</label>
+                <input
+                  type="text"
+                  placeholder="Enter mother's name"
+                  id="motherNm"
+                  required
+                />
+                <!-- <span id="MnmError"></span> -->
+              </div>
+
+              <div class="input-field">
+                <label for="spouseNm">Spouse name :</label>
+                <input
+                  type="text"
+                  placeholder="Enter spouse name"
+                  id="spouseNm"
+                  required
+                />
+                <!-- <span id="spouseError"></span> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="details unmpass">
+            <span class="title">Username And Password</span>
+            <div class="fields">
+              <div class="input-field">
+                <label for="unm">Username :</label>
+                <input
+                  type="text"
+                  placeholder="Enter Username"
+                  id="unm"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="pass">Password :</label>
+                <input
+                  type="text"
+                  placeholder="Enter password"
+                  id="pass"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="repass">Re-Enter Password :</label>
+                <input
+                  type="text"
+                  placeholder="Confirm Password"
+                  id="repass"
+                  required
+                />
+                <span id="repassError"></span>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <div class="backBtn">Back</div>
+              <a href="Index.html" class="submitbtn">
+                <input
+                  type="button"
+                  class="nextBtn"
+                  value="Submit"
+                  onclick="validation()"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="SignUpFinal.js"></script>
+  </body>
+</html>

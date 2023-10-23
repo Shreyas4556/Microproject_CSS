@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CheckBalance.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Wel-Come to iBanking</h1>
+      <div class="container">
+        <h2>Check balance</h2>
+        <br />
+        <hr />
+        <form>
+          <div class="form first">
+            <div class="fields">
+              <div class="input-field">
+                <label for="pinNo">Enter PIN Number :</label>
+                <input
+                  type="text"
+                  placeholder="Enter PIN Number"
+                  id="pinNo"
+                  required
+                />
+                <span id="pinNoError"></span>
+              </div>
+              <div class="input-field">
+                <label for="Amt">Your Balance is :</label>
+                <input type="text" id="Amt" disabled />
+              </div>
+
+              <input
+                type="button"
+                class="depositBtn"
+                value="Check"
+                onclick="validation()"
+              />
+              <button class="backBtn" onclick="gotoDash()">Back</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </center>
+
+    <script src="CheckBalance.js"></script>
+  </body>
+</html>

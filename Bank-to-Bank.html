@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Bank-to-Bank.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Wel-Come to iBanking</h1>
+      <div class="container">
+        <h2>Bank To Bank Transition</h2>
+        <br />
+        <hr />
+        <form action="#" onsubmit="return validation()">
+          <div class="form first">
+            <div class="fields">
+              <div class="input-field">
+                <label for="accNo">Enter Account Number :</label>
+                <input
+                  type="number"
+                  placeholder="Enter Amount Number"
+                  id="accNo"
+                  required
+                />
+                <span id="AccNoError"></span>
+              </div>
+              <div class="input-field">
+                <label for="Amt">Enter Amount :</label>
+                <input
+                  type="number"
+                  placeholder="Enter Amount to Transfer"
+                  id="Amt"
+                  required
+                />
+                <span id="AmtError"></span>
+              </div>
+
+              <input type="submit" class="depositBtn" value="Transfer" />
+              <input
+                type="button"
+                class="backBtn"
+                value="Back"
+                onclick="gotoDash()"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </center>
+
+    <script src="Bank-to-Bank.js"></script>
+  </body>
+</html>
